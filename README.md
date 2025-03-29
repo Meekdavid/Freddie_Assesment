@@ -1,4 +1,3 @@
-```markdown
 # 🧠⚡ Freddie Recruit AI Rating System
 
 <div align="center">
