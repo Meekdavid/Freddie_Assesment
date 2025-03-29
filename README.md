@@ -190,18 +190,6 @@ graph TD
 - Google Cloud Project
 - OpenAI API access
 
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/Meekdavid/Freddie_Assesment.git
-
-# Navigate to project
-cd Freddie_Assesment
-
-# Install dependencies
-dotnet restore
-```
-
 ### Configuration
 1. Download the published version of the code from https://drive.google.com/drive/folders/1B5Sj8UyEhnUEnQiWaF4aoduqkB2pDxOR
 2. Amend `appsettings.Production.json` from the downloaded file with the correct credentials, after amendment is done, execute the application 'Freddie.exe'
