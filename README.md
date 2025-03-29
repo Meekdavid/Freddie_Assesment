@@ -231,4 +231,3 @@ dotnet restore
     <a href="LICENSE">License</a>
   </p>
 </div>
-```
