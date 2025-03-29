@@ -1,7 +1,4 @@
 # 🧠⚡ Freddie Recruit AI Rating System
-
-<div align="center">
-  <img src="https://i.imgur.com/JQZ1l1a.png" width="400" alt="Freddie AI Logo">
   
   *"Precision candidate evaluation powered by AI and Google Workspace"*
   
@@ -206,20 +203,44 @@ dotnet restore
 ```
 
 ### Configuration
-1. Create `appsettings.Development.json` from template
-2. Add your credentials:
+1. Download the published version of the code from https://drive.google.com/drive/folders/1B5Sj8UyEhnUEnQiWaF4aoduqkB2pDxOR
+2. Amend `appsettings.Production.json` from the downloaded file with the correct credentials, after amendment is done, execute the application 'Freddie.exe'
    ```json
    {
-     "GoogleApi": {
-       "ServiceAccountKeyPath": "credentials.json",
-       "SpreadsheetId": "your-sheet-id"
-     },
-     "OpenAI": {
-       "ApiKey": "your-api-key"
-     }
-   }
-   ```
+   "ApplicationSettings": {
+    "EmailDetails": {
+      "SMTPServer": "smtp.gmail.com",
+      "SenderEmail": "mbokodavid@gmail.com",
+      "Port": 587, // Use 465 for SSL, 587 for TLS
+      "UseSsl": true,
+      "MemberName": "", // Not relevant
+      "Password": "", // Not relevant
+      "APIKey": "" // Openapi API key
 
+    },
+    "FireBaseStorage": {
+      "BucketName": "smtp.gmail.com",
+      "Port": 587, // Use 465 for SSL, 587 for TLS
+      "BaseUrl": "https://firebasestorage.googleapis.com/v0/b/"
+    },
+    "JwtConfig": {
+      "Issuer": "https://localhost",
+      "Audience": "https://localhost",
+      "SecretKey": "",
+      "ExpiryDate": 120 // Minutes before token expiration
+    },
+    "ServiceAccountKeyPath": "", // The json file name for google api. Ensure this file is added to the folder downloaded above
+    "JobRoleToEvaluateCandidate": "Marketing Officer",
+    "CandidateEligibilityThreshold": 10,
+    "MaximumTokenEdebAI": "150",
+    "OpenAITemperature": "0.8",
+    "FreddieGmail": "mbokodavid@gmail.com",
+    "SpreadsheetId": "", // The spreadsheet Id to retrieve candidate data from
+    "Key": "",
+    "OpenAIKey": "" // Openapi API key
+  }
+}
+```
 ---
 
 <div align="center">
