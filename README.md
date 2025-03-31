@@ -84,9 +84,9 @@ Analyze this candidate for [Position]:
 Resume Highlights: [Formatted Content]
 
 Evaluation Criteria:
-1. Relevant Experience (0-40)
-2. Skills Match (0-30)
-3. Cultural Fit (0-30)
+1. Relevant Experience
+2. Skills Match
+3. Cultural Fit
 
 Response Format: {"rate":0-100,"details":"analysis"}
 ```
@@ -186,13 +186,13 @@ graph TD
 ## 🚀 Getting Started
 
 ### Prerequisites
-- .NET 8.0 SDK
+- .NET 8.0 SDK. Install the sdk from https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 - Google Cloud Project
 - OpenAI API access
 
 ### Configuration
 1. Download the published version of the code from https://drive.google.com/drive/folders/1B5Sj8UyEhnUEnQiWaF4aoduqkB2pDxOR
-2. Amend `appsettings.Production.json` from the downloaded file with the correct credentials, after amendment is done, execute the application 'Freddie.exe'
+2. Amend `appsettings.Production.json` from the downloaded file with the correct credentials, after the amendment is done, execute the application 'Freddie.exe'
    ```json
    {
    "ApplicationSettings": {
